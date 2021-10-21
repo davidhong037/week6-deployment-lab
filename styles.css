@@ -1,0 +1,36 @@
+body {
+    background-image: url('https://www.denofgeek.com/wp-content/uploads/2016/11/azmodan.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: red;
+    cursor: crosshair;
+    transform: scale(1.10, 1.10);
+}
+
+nav a:active {
+    transform: scale(1, 1);
+    color: blue;
+}
+
