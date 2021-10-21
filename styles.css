@@ -34,3 +34,41 @@ nav a:active {
     color: blue;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.characters {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.character-card {
+    background-color: black;
+    height: 750px;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.class-type {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.class-image {
+    width: 400px;
+    border: 3px solid black;
+    box-shadow: 0 0 10px black;
+}
+
