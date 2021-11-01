@@ -16,6 +16,10 @@ app.get('/journey', function(req, res){
     res.sendFile(path.join(__dirname, "../client/journey.html"))
 })
 
+app.get('/journey', function(req, res){
+    res.sendFile(path.join(__dirname, "../client/terrorblade.html"))
+})
+
 app.get('/css', function(req, res){
     res.sendFile(path.join(__dirname, "../client/styles.css"))
 })
