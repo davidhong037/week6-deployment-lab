@@ -1,31 +1,27 @@
 const express = require('express')
-const { read } = require('fs')
+
 const path = require('path')
 
 const app = express()
 
 app.get('/', function(req, res){
-    res.sendFile(path.join(__dirname, "../index.html"))
+    res.sendFile(path.join(__dirname, "../client/index.html"))
 })
-app.get('/', function(req, res){
-    res.sendFile(path.join(__dirname, "../classes.html"))
+
+app.get('/weapons', function(req, res){
+    res.sendFile(path.join(__dirname, "../client/weapons.html"))
 })
-app.get('/', function(req, res){
-    res.sendFile(path.join(__dirname, "../followers.html"))
-})
-app.get('/', function(req, res){
-    res.sendFile(path.join(__dirname, "../items.html"))
-})
-app.get('/', function(req, res){
-    res.sendFile(path.join(__dirname, "../weapons.html"))
+
+app.get('/journey', function(req, res){
+    res.sendFile(path.join(__dirname, "../client/journey.html"))
 })
 
 app.get('/css', function(req, res){
-    res.sendFile(path.join(__dirname, "../styles.css"))
+    res.sendFile(path.join(__dirname, "../client/styles.css"))
 })
 
 app.get('/js', function(req, res){
-    read.sendFile(path.join(__dirname, "../main.js"))
+    read.sendFile(path.join(__dirname, "../client/main.js"))
 })
 
 const port = process.env.PORT || 4567

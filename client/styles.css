@@ -1,0 +1,80 @@
+body {
+    background-image: url('https://wallpapercave.com/wp/OoMaouG.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.btn-select {
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: bold;
+    color: red;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.btn-select:hover {
+    transform: scale(1.10);
+    cursor: crosshair;
+    color: white;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.btn-select:active {
+    transform: scale(1);
+    color: yellow;
+    background-color: black;
+    border: 2px solid yellow;
+
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.photo {
+    width: 400px;
+    height: 300px;
+}
+
+h2 {
+    color: white;
+    border: 1px solid red;
+    padding: 5px;
+    text-align: center;
+    background-color: black;
+}
+
+.weapons-select, .journey {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.weapons, .journey-select {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weapons-type, .path-desc {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    border: 2px solid black;
+}
+
